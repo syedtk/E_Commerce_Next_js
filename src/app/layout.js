@@ -1,14 +1,13 @@
-import { Inter,Poppins } from "next/font/google";
+import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/navBars/navbar";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
-import Announcebar from "@/components/announcebar";
+import HeroCaurosel from "@/components/heroCaurosel/heroCaurosel";
+
+
 config.autoAddCss = false;
-
-
 const inter = Inter({ subsets: ["latin"] });
-const poppins = Poppins({ subsets: ["latin"],weight:['100','200','300','400','500','600','700','800','900'] });
+const poppins = Poppins({ subsets: ["latin"], weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'] });
 
 export const metadata = {
   title: "Create Next App",
@@ -18,11 +17,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>
-        <Announcebar/>
-        <Navbar/>     
-        {children}</body>
 
-    </html>
+      <body className={poppins.className}>
+          {children}
+          <HeroCaurosel/>     
+      </body>
+
+
+
+    </html >
   );
 }

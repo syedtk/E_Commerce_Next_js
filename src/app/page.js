@@ -1,10 +1,15 @@
+"use client"
 import React from 'react'
+import Announcebar from '@/components/announcebar';
+import Navbar from '@/components/navBars/navbar';
+
 
 function Page() {
-  return (
-    <div>
-      
-    </div>
+  return (  
+      <>
+      <Announcebar />
+      <Navbar/>
+      </>
   )
 }
 

@@ -5,7 +5,7 @@ import React from 'react'
 
 function Announcebar() {
     return (
-        <div className='hidden md:flex justify-between pt-2 popp mx-auto fs-[12px]'>
+        <div className='hidden md:flex justify-between bg-ylo pt-2 popp container mx-auto px-7 fs-[12px]'>
             <div >
                 <p className='font-normal text-sm'>Need help? Call us: (+98) 0234 456 789</p>
             </div>
