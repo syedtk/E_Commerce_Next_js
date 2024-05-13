@@ -4,6 +4,9 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import HeroCaurosel from "@/components/heroCaurosel/heroCaurosel";
 
+import PopularProductsCard from "@/components/popularProduct/popularProductsCard";
+
+
 
 config.autoAddCss = false;
 const inter = Inter({ subsets: ["latin"] });
@@ -20,7 +23,8 @@ export default function RootLayout({ children }) {
 
       <body className={poppins.className}>
           {children}
-          <HeroCaurosel/>     
+          <HeroCaurosel/>  
+            <PopularProductsCard/>
       </body>
 
 
